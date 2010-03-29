@@ -1,0 +1,14 @@
+development:
+    container_name: agents_development
+    username:
+    api_key: 
+
+test:
+    container_name: agents_test
+    username: 
+    api_key: 
+
+production:
+    container_name: agents_production
+    username: 
+    api_key: 
