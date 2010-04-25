@@ -11,6 +11,14 @@ body {
 	display: block;
 }
 
+
+/* hide the sub menus*/
+#body.clearfix ul {
+	visibility: hidden;
+	float: left;
+}
+
+
 #body_content_left *, #body_content_right * {
     line-height: 22px;
     color: #fbffff;

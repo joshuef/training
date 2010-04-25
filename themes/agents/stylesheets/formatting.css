@@ -1,4 +1,4 @@
-@import url('/stylesheets/refinery/formatting.css');
+
 /*  
     Override default refinery formatting below. 
     Formatting applies to backend WYSIWYG editors and all frontend. 
@@ -19,6 +19,11 @@ h1, #body_content h1, h1#body_content_page_title {
 }
 #body_content_left p, #body_content_right p {
     margin-bottom: 23px;
+}
+
+#body.clearfix ul {
+	visibility: hidden;
+	float: left;
 }
 h2, h3 {
     color: #8f8f8f;
