@@ -3,14 +3,14 @@ login: &login
   secret_access_key: U5pyydfYqT3gM7L8cA8TY1VMGngxAiYJFROJxiSc
 
 development:
-  bucket_name: agents_development
+  bucket_name: xxx14b4
   <<: *login
-  distribution_domain: 
+  distribution_domain: d2e00nn24ouemb.cloudfront.net
 
 test:
-  bucket_name: agents_test
+  bucket_name: xxx14b4
   <<: *login
-  distribution_domain: 
+  distribution_domain: d2e00nn24ouemb.cloudfront.net
 
 production: 
   bucket_name: xxx14b4
