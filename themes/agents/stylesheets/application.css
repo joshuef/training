@@ -1,61 +1,92 @@
+/* @override http://localhost:3000/theme/stylesheets/application.css?1269863081 */
+
 @import url('/stylesheets/refinery/application.css');
 /*  
     Override default refinery application CSS below. 
     Formatting applies to all frontend.
 */
+
+/* Page Settings */
+
+
 body {
     margin: 0px;
     padding: 0px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
-#body_content {
-    margin-top: 36px;
-}
-#body_content_left {
-    width: 544px;
-}
-#body_content_right {
-    width: 396px;
-}
-#body_content_right img {
-    border: 3px solid #c7c7c7;
-}
+
+
+
 #page {
     width: 100%;
     padding: 0px;
     margin: 0px;
 }
-#body, #header_content, #footer_content {
-    width: 960px;
-    margin: 0px auto;
+
+#body {
+	margin: 0px auto;
+	width: 960px;
+	
+} 
+
+#header_content, #footer_content {
+    width: 940px;
+    
 }
+
+
 #header {
-    background: url('/theme/images/header_background.png') repeat-x;
+    background: white;
 }
+
+
+/* Heager + logo */
+
+
+
 #header_content {
     position: relative;
-    height: 132px;
+    background: url(/theme/images/a4fm_logo-01.png) no-repeat scroll;
+	height: 112px;
 }
 #header_content h1, #header_content h1 a {
-    color: #feffff;
     font-size: 24px;
     font-weight: normal;
-    left: 0px;
     text-decoration: none;
+	display: none;
 }
+
 #header_content h1, #header_content #menu {
-    position: absolute;
-    bottom: 30px;
+    position: relative;
+    bottom: 0px;
     margin: 0px;
+    top: 15px;
 }
 #header_content #menu {
     right: 0px;
     padding: 0px;
 }
+
+
+
+
+/* Menu Positioning */
+
+
 #menu li {
     float: left;
     list-style: none;
     position: relative;
+    bottom: 5px;
+	padding-top: 40px;
 }
+
+
+/* menu styles */
+
+
 #menu li a, #menu li:hover ul li a {
     color: #969792;
     display: block;
@@ -63,6 +94,7 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
 #menu li.selected a, #menu li:hover a, #menu li a:hover, #menu li ul li a:hover {
     color: #32322b;
     background: white;
@@ -78,17 +110,55 @@ body {
 }
 #menu li ul li {
     float: left;
-}
+	}
+	
 #menu li:hover ul {
     left: auto;
 }
+
+/* Body Settings */
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+#body_content img{
+    margin-top: 15px;
+	border-top: 5px solid green;
+}
+#body_content_left {
+    width: 90px;
+}
+#body_content_right {
+    width: 400px;
+	background: url(/theme/images/silver75-01.png) repeat;
+	
+	
+	margin-top: 55px;
+	margin-right: 55px;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+
+
+
+
+
 #footer {
     margin-top: 120px;
-    background: url('/theme/images/footer_background.png') repeat-x;
+    background: gray;
 }
 #footer_content {
     height: 103px;
     padding-top: 94px;
-    background: url('/images/refinery/logo.png') 0px 80px no-repeat;
+    background: ;
     text-align: right;
 }
