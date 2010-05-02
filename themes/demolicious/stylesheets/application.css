@@ -1,3 +1,9 @@
+/* java */
+
+.slideshow { height: 465px; width: 940px; margin: auto }
+.slideshow img { padding: 0px; border: 1px solid #ccc; background-color: #eee; }
+
+
 /* Page Settings */
 
 
@@ -69,6 +75,8 @@ h1#body_content_page_title{
 
 
 /* Menu Positioning */
+
+#tab_menu {}
 
 #menu {
 	text-align:bottom;
