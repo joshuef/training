@@ -20,9 +20,13 @@
 <% end -%>
 <% if body_content_left.present? or (show_empty_sections and !remove_automatic_sections) -%>
   <div id='body_content_left' class='clearfix'>
+	<div id="bar">
+		
+	</div>
     <%= body_content_left %>
   </div>
 <% end -%>
+
 <% if body_content_right.present? or (show_empty_sections and !remove_automatic_sections)  -%>
   <div id='body_content_right' class='clearfix'>
     <%= body_content_right %>

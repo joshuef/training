@@ -1,7 +1,7 @@
 /* java */
 
 .slideshow { height: 465px; width: 940px; margin: auto }
-.slideshow img { padding: 0px; border: 1px solid #ccc; background-color: #eee; }
+
 
 
 /* Page Settings */
@@ -76,10 +76,17 @@ h1#body_content_page_title{
 
 /* Menu Positioning */
 
-#tab_menu {}
+#tab_menu {
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: 110px;
+	padding-bottom: 5px;
+	width: 940px;
+	margin-left: 6px;
+}
 
 #menu {
-	text-align:bottom;
 }
 
 #menu li {
@@ -96,16 +103,18 @@ h1#body_content_page_title{
 
 
 #menu li a, #menu li:hover ul li a {
-    color: #969792;
+    color: white;
     display: block;
     padding: 10px 18px;
     text-decoration: none;
     cursor: pointer;
+    background-color: green ;
+    margin-left: 4px;
 }
 
 #menu li.selected a, #menu li:hover a, #menu li a:hover, #menu li ul li a:hover {
-    color: #32322b;
-    background: white;
+    color: white;
+    
 }
 #menu li ul {
     position: absolute;
@@ -143,9 +152,17 @@ h1#body_content_page_title{
 }
 
 #body_content img{
-    margin-top: 15px;
-	border-top: 5px solid green;
+    margin-top: px;
 }
+
+#bar {
+	height: 10px;
+	background-color: green;
+    width: 940px;
+    margin: auto;
+    padding-top: 10px;
+}
+
 #body_content_left {
   width: 960px;
 	z-index: -1;
