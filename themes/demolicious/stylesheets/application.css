@@ -51,7 +51,9 @@ h1#body_content_page_title{
 #header_content {
     position: relative;
     background: url(/theme/images/a4fm_logo-01.png) no-repeat scroll;
-	height: 112px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
 }
 #header_content h1, #header_content h1 a {
     font-size: 24px;
@@ -77,13 +79,12 @@ h1#body_content_page_title{
 /* Menu Positioning */
 
 #tab_menu {
-	display: inline-block;
-	float: left;
-	position: relative;
-	top: 110px;
 	padding-bottom: 5px;
 	width: 940px;
 	margin-left: 6px;
+	float: left;
+	position: absolute;
+	top: 85px;
 }
 
 #menu {
@@ -123,7 +124,7 @@ h1#body_content_page_title{
     margin: 0px;
     min-width: 140px;
     max-width: 300px;
-    background: white;
+    background: green;
 	font-size: 11px;
 }
 #menu li ul li {
@@ -171,19 +172,18 @@ h1#body_content_page_title{
 
 }
 #body_content_right {
-    width: 400px;
+    width: 350px;
 	background: url(/theme/images/silver75-01.png) repeat;
 	
 	
-	margin-top: 65px;
+	margin-top: 40px;
 	margin-right: 55px;
 	padding-left: 15px;
 	padding-right: 15px;
 	z-index: 1;
 	display: block;
 	float: right;
-float: right;
-        margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 
