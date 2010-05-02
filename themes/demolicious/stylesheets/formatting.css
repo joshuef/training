@@ -1,5 +1,4 @@
 
-
 body {
     font-family: Verdana;
     font-size: 12px;
@@ -25,7 +24,7 @@ body {
 }
 
 h1, #body_content h1, h1#body_content_page_title {
-    color: #eb1313;
+    color: white;
     font-size: 24px;
     font-weight: normal;
     font-family: "Trebuchet MS", Trebuchet;
@@ -45,6 +44,6 @@ h3 {
     font-size: 16px;
 }
 #footer_content * {
-    color: #c7c7c7;
+    color: #d9dcdc;
     font-size: 11px;
 }

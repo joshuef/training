@@ -1,10 +1,10 @@
 
 
 #body_content {
-    margin-top: 1px;
+    margin-top: ;
 }
 
 h1#body_content_page_title{
-	visibility: hidden;
+	display:none;
 	font-size: ;
 }
