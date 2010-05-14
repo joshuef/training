@@ -195,8 +195,11 @@ h1#body_content_page_title{
     
 }
 #footer_content {
-    height: 103px;
-    padding-top: 94px;
+    height: 40px;
+    padding-top: px;
+	margin-bottom: 30px;
     background: ;
-    text-align: right;
+    text-align: left;
+	margin-left: 20px;
+	padding-top:5px;
 }
