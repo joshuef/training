@@ -171,7 +171,7 @@ h1#body_content_page_title{
 }
 #body_content_right {
     width: 350px;
-	background: url(/theme/images/silver75-01.png) repeat;
+	background: url(/theme/images/gray80.png) repeat;
 	
 	margin-top: 30px;
 	margin-right: 55px;
@@ -183,6 +183,7 @@ h1#body_content_page_title{
 	margin-bottom: 30px;
 	height: 450px;
 }
+
 
 
 

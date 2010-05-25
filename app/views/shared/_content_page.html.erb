@@ -24,7 +24,8 @@
 <% end -%>
 
 <% if body_content_right.present? or (show_empty_sections and !remove_automatic_sections)  -%>
-  <div id='body_content_right' class='clearfix'>
+ 
+<div id='body_content_right' class='clearfix'>
 	<% if body_content_title.present? or (show_empty_sections and !remove_automatic_sections) -%>
 	  <h1 id='body_content_page_title'>
 	    <%= body_content_title %>
@@ -32,7 +33,9 @@
 	<% if home_page? -%> <% else -%><br><% end -%>
 	<% end -%>
     <%= body_content_right %>
+<div id="transbox"> 
   </div>
+</div>
 <% end -%>
 </div>
 <% unless @page.live? -%>
