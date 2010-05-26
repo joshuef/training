@@ -32,3 +32,4 @@ end
 # You can set things in the following file and we'll try hard not to destroy them in updates, promise.
 # Note: These are settings that aren't dependent on environment type. For those, use the files in config/environments/
 require Rails.root.join('config', 'settings.rb').to_s
+
