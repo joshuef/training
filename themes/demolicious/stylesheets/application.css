@@ -1,3 +1,5 @@
+/* @override http://localhost:3000/theme/stylesheets/application.css?1269863081 */
+
 
 /* Page Settings */
 
@@ -45,11 +47,12 @@ h1#body_content_page_title{
 
 
 #header_content {
-    position: relative;
     background: url(/theme/images/a4fm_logo-01.png) no-repeat scroll;
 	height: 70px;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 3;
+	position: relative;
 }
 #header_content h1, #header_content h1 a {
     font-size: 24px;
@@ -83,6 +86,7 @@ h1#body_content_page_title{
 }
 
 #menu {
+	
 }
 
 #menu li {
@@ -105,6 +109,7 @@ h1#body_content_page_title{
     text-decoration: none;
     cursor: pointer;
     background-color: green ;
+   
     
 }
 
@@ -152,10 +157,6 @@ h1#body_content_page_title{
 	font-size: 2em ;
 }
 
-#body_content img{
-    margin-left: auto;
-    margin-right: auto;
-}
 
 #bar {
 	height: 10px;
@@ -166,11 +167,15 @@ h1#body_content_page_title{
 
 #body_content_left {
   width: 960px;
-	z-index: -1;
 	position: absolute;
-
-
 }
+
+#bg_image {
+	z-index: -1;
+	display:;
+}
+
+
 #body_content_right {
     width: 350px;
 	background: url(/theme/images/gray80.png) repeat;
@@ -181,14 +186,38 @@ h1#body_content_page_title{
 	padding-right: 15px;
 	padding-bottom: 15px;
 	z-index: 1;
-	display: block;
 	float: right;
 	margin-bottom: 30px;
+	position: absolute;
+	top: 80px;
+	right: 115px;
 }
 
+/* News Main */
 
+#news_page{
+	float: right;
+	background: url(/theme/images/gray80.png) repeat;
+	z-index: 1;
+	position: absolute;
+	width: 350px;
+	height: 410px;
+	padding-left: 10px;
+	padding-right: 10px;
+	top: 30px;
+	right: 45px;
+	overflow: hidden;
+	margin-top: px;
+}
 
+#body_content_image { 
 
+	float: none;
+	z-index: -1;
+		clear: none;
+		position: absolute;
+	}
+	
 
 
 #footer {

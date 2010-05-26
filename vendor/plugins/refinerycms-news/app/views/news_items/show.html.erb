@@ -1,5 +1,6 @@
 <% content_for :body_content_title, "<h1>#{@news_item.title}</h1>" %>
-<% content_for :body_content_left do %>
+<% content_for :body_content_right do %>
+<div>
   <p>
     <small>Published <%= @news_item.publish_date.strftime("%A %d of %B, %Y") %></small>
   </p>
@@ -8,6 +9,6 @@
     <%= link_to "Back to all news", news_items_url %>
   </p>
 <% end %>
-<% content_for :body_content_right, render(:partial => 'recent_posts') %>
+<% content_for :body_content_left, render(:partial => 'recent_posts') %>
 
 <%= render :partial => "/shared/content_page" %>
