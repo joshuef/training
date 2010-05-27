@@ -1,3 +1,4 @@
+
 /* Page Settings */
 
 
@@ -158,22 +159,14 @@ h1#body_content_page_title{
 }
 
 
-#bar {
-	height: 10px;
-	background-color: green;
-    width: 940px;
-    padding-top: 10px;
-}
+
 
 #body_content_left {
   width: 960px;
 	position: absolute;
 }
 
-#bg_image {
-	z-index: -1;
-	display:;
-}
+
 
 
 #body_content_right {
@@ -191,34 +184,22 @@ h1#body_content_page_title{
 	position: absolute;
 	top: 80px;
 	right: 115px;
+	max-height: 420px;
 }
 
 /* News Main */
 
-#news_page{
-	float: right;
-	background: url(/theme/images/gray80.png) repeat;
-	z-index: 1;
-	position: absolute;
-	width: 350px;
-	height: 410px;
-	padding-left: 10px;
-	padding-right: 10px;
-	top: 30px;
-	right: 45px;
-	overflow: hidden;
-	margin-top: px;
-}
-
-#body_content_image { 
-
+	
+#bg_image {
+	z-index: -1;
+	display:;
 	float: none;
 	z-index: -1;
-		clear: none;
-		position: absolute;
-	}
-	
-
+	clear: none;
+	position: absolute;
+	margin-top: 7px;
+	border-top: 14px solid green;
+}
 
 #footer {
     margin-top: 500px;

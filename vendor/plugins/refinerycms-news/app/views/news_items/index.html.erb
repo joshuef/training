@@ -1,9 +1,5 @@
 
-<% content_for :body_content_left do %>
-<div id='news_page'>
-  
-	  <h1 id='body_content_page_title'>
-Latest News	  </h1><br>
+<% content_for :body_content_right do %>
 
   <% if @news_items.any? %>
 
@@ -18,10 +14,12 @@ Latest News	  </h1><br>
   <% else %>
     <p><em>Sorry we haven't posted up any news yet.</em></p>
   <% end %>
-</div>
-<div id='body_content_image' class='clearfix'><img src="http://wyli.co.uk/agents/temple.jpg" /></div>
+
+
 <% end %>
 
+<div id="body_content_left">
+	<div id='bg_image' class='clearfix'><img src="http://wyli.co.uk/agents/temple.jpg" /></div>
+	</div>
 	
-<% content_for :body_content_left, "&nbsp;" if @news_items.offset > 0 -%>
 <%= render :partial => "/shared/content_page" %>

@@ -9,7 +9,7 @@
   extra_body_content_classes = []
   extra_body_content_classes << "no_title" if body_content_title.blank?
   extra_body_content_classes << "no_left" if body_content_left.blank?
-  extra_body_content_classes << "no_right" if body_content_right.blank?
+  body_content_title = News << "no_right" if body_content_right.blank?
 -%>
 <%= render :partial => "/shared/submenu" if !admin? and (show_submenu ||= true) and RefinerySetting.find_or_set(:show_submenu_on_content_pages, true) %>
 <div id='body_content' class='clearfix<%= " #{extra_body_content_classes.join(" ")}" if extra_body_content_classes.any? %>'>
@@ -17,25 +17,27 @@
 <% if body_content_left.present? or (show_empty_sections and !remove_automatic_sections) -%>
   <div id='body_content_left' class='clearfix'>
 	<div id="bar">
-		
+
 	</div>
     <%= body_content_left %>
   </div>
 <% end -%>
-
 <% if body_content_right.present? or (show_empty_sections and !remove_automatic_sections)  -%>
  
 <div id='body_content_right' class='clearfix'>
 	<% if body_content_title.present? or (show_empty_sections and !remove_automatic_sections) -%>
+	
+
 	  <h1 id='body_content_page_title'>
 	    <%= body_content_title %>
 	  </h1>
+	
 	<% if home_page? -%> <% else -%><br><% end -%>
 	<% end -%>
     <%= body_content_right %>
-
-</div>
 <% end -%>
+</div>
+
 </div>
 <% unless @page.live? -%>
   <div class='page_not_live'>
