@@ -9,7 +9,7 @@
   extra_body_content_classes = []
   extra_body_content_classes << "no_title" if body_content_title.blank?
   extra_body_content_classes << "no_left" if body_content_left.blank?
-  body_content_title = News << "no_right" if body_content_right.blank?
+  extra_body_content_classes << "no_right" if body_content_right.blank?
 -%>
 <%= render :partial => "/shared/submenu" if !admin? and (show_submenu ||= true) and RefinerySetting.find_or_set(:show_submenu_on_content_pages, true) %>
 <div id='body_content' class='clearfix<%= " #{extra_body_content_classes.join(" ")}" if extra_body_content_classes.any? %>'>
