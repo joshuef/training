@@ -190,7 +190,7 @@ h1#body_content_page_title{
 	z-index: -1;
 	float: left;
 	clear: ;
-	position: fixed;
+	position: absolute;
 	margin-top: 7px;
 	border-top: 1.3em solid green;
 }
