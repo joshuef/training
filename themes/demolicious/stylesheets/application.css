@@ -1,5 +1,3 @@
-
-
 /* Page Settings */
 
 
@@ -190,19 +188,19 @@ h1#body_content_page_title{
 	
 #bg_image {
 	z-index: -1;
-	float: none;
-	z-index: -1;
-	clear: none;
-	position: absolute;
+	float: left;
+	clear: ;
+	position: fixed;
 	margin-top: 7px;
 	border-top: 1.3em solid green;
 }
 
 #footer {
-    margin-top: 500px;
+   
     background: gray;
-    clear: both ;
-    
+	position: absolute;
+	top: 580px;
+	width: 940px;
 }
 
 #footer_legal {
