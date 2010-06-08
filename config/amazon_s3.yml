@@ -1,6 +1,6 @@
 login: &login
   access_key_id: AKIAI4C63C6S2LO7IJ2Q
-  secret_access_key: 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
+  secret_access_key: 
 
 development:
   bucket_name: 
