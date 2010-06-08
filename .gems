@@ -2,3 +2,4 @@ unicode
 refinerycms --version 0.9.6.24
 rmagick --version 2.12.2
 hpricot
+imagemagick
